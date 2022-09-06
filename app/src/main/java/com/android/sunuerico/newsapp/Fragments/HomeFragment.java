@@ -31,6 +31,7 @@ import com.android.sunuerico.newsapp.R;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -105,7 +106,7 @@ public class HomeFragment extends Fragment
 		listView.setEmptyView(mEmptyView);
 
 		// Create a empty custom adapter and set it on ListView
-		mNewsAdapter = new NewsAdapter(getContext(), new ArrayList<News>(), false);
+		mNewsAdapter = new NewsAdapter(requireContext(), new ArrayList<News>(), false);
 		listView.setAdapter(mNewsAdapter);
 
 		// Attach a listener on list item to open a link for the news item in web browser

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<!-- Default padding though out app -->
-	<dimen name="default_app_padding">8dp</dimen>
+	<dimen name="default_app_padding">10dp</dimen>
 
 	<!-- Default padding for views inside a list item -->
 	<dimen name="default_list_item_padding">4dp</dimen>

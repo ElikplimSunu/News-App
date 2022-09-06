@@ -5,7 +5,7 @@
 	android:layout_height="match_parent"
 	android:background="@color/backgroundColor">
 
-	<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 		android:id="@+id/swipe_to_refresh"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent">
