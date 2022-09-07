@@ -33,6 +33,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * TechnologyFragment is a {@link Fragment} subclass that displays a list of technology related news articles
  * A simple {@link Fragment} subclass which displays a list of news related to technology.
  *
  * @author Eric Elikplim Sunu

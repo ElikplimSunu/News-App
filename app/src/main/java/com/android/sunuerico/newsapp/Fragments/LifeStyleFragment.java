@@ -33,7 +33,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * LifeStyleFragment is a {@link Fragment} subclass that displays a list of lifestyle related
+ * news articles
  * A simple {@link Fragment} subclass.
+ *
+ * @author Eric Sunu
+ * @version 1.0
  */
 public class LifeStyleFragment extends Fragment
 		implements LoaderManager.LoaderCallbacks<List<News>> {

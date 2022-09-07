@@ -32,6 +32,12 @@ import com.android.sunuerico.newsapp.Values.Constants;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * FashionFragment is a subclass of Fragment that displays a list of fashion news.
+ * A simple {@link Fragment} subclass.
+ * @author Eric Elikplim Sunu
+ * @version 1.0
+ */
 public class FashionFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<News>> {
 
 

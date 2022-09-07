@@ -32,6 +32,13 @@ import com.android.sunuerico.newsapp.Values.Constants;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * EducationFragment is a subclass of Fragment that displays a list of news.
+ * A simple {@link Fragment} subclass.
+ * @author Eric Sunu
+ * @version 1.0
+ */
 public class EducationFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<News>> {
 
 	private static final int NEWS_LOADER_ID = 2;
@@ -45,6 +52,9 @@ public class EducationFragment extends Fragment implements LoaderManager.LoaderC
 	// Header for list
 	private View mListViewHeader;
 
+	/**
+	 * Required empty public constructor
+	 */
 	public EducationFragment() {
 		// Required empty public constructor
 	}

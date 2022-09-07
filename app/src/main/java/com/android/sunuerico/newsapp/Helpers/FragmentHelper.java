@@ -11,13 +11,26 @@ import com.android.sunuerico.newsapp.Objects.UserPreference;
 import com.android.sunuerico.newsapp.*;
 import com.android.sunuerico.newsapp.Values.Constants;
 
+/**
+ * FragmentHelper class is a helper class that contains methods that are used in the fragments
+ *
+ * @author Eric Sunu
+ * @version 1.0
+ */
 public class FragmentHelper {
 
+	/**
+	 * This is an empty constructor for the FragmentHelper class
+	 */
 	public FragmentHelper() {
 		// Empty constructor so no one can initialize it
 	}
 
-
+	/**
+	 * This method checks if the device is connected to the internet
+	 * @param userPreference the user preference object
+	 * @return true if the device is connected to the internet, false otherwise
+	 */
 	public static String getTopHeadlines(UserPreference userPreference) {
 		Uri.Builder builder = new Uri.Builder();
 		builder.scheme(Constants.URL_SCHEME);

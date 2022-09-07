@@ -33,6 +33,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * SportsFragment is a {@link Fragment} subclass that displays a list of sports news articles
  * A simple {@link Fragment} subclass.
  *
  * @author Eric Elikplim Sunu

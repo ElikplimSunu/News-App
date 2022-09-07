@@ -33,7 +33,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * HomeFragment is the main fragment of the app. It displays the list of top news headlines.
  * A simple {@link Fragment} subclass.
+ * @author Eric Sunu
+ * @version 1.0
  */
 public class HomeFragment extends Fragment
 		implements LoaderManager.LoaderCallbacks<List<News>> {

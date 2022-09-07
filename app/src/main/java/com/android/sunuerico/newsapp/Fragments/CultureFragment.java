@@ -33,7 +33,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * CultureFragment class is a subclass of Fragment class that displays a list of culture related news
  * A simple {@link Fragment} subclass.
+ *
+ * @author Eric Sunu
+ * @version 1.0
  */
 public class CultureFragment extends Fragment
 		implements LoaderManager.LoaderCallbacks<List<News>> {
@@ -49,6 +53,9 @@ public class CultureFragment extends Fragment
 	// Header for list
 	private View mListViewHeader;
 
+	/**
+	 * Required empty public constructor
+	 */
 	public CultureFragment() {
 		// Required empty public constructor
 	}
@@ -108,7 +115,15 @@ public class CultureFragment extends Fragment
 		mNewsAdapter = new NewsAdapter(getContext(), new ArrayList<News>(), true);
 		listView.setAdapter(mNewsAdapter);
 
+
 		// Attach a listener on list item to open a link for the news item in web browser
+		/**
+		 * Attach a listener on list item to open a link for the news item in web browser
+		 * @param parent The AdapterView where the click happened.
+		 * @param view The view within the AdapterView that was clicked (this will be a view provided by the adapter)
+		 * @param position The position of the view in the adapter.
+		 * @param id The row id of the item that was clicked.
+		 */
 		listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> adapterView, View view, int currentPosition, long l) {
