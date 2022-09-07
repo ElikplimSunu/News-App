@@ -8,7 +8,7 @@ import android.net.Uri;
 import android.preference.PreferenceManager;
 
 import com.android.sunuerico.newsapp.Objects.UserPreference;
-import com.android.sunuerico.newsapp.R;
+import com.android.sunuerico.newsapp.*;
 import com.android.sunuerico.newsapp.Values.Constants;
 
 public class FragmentHelper {

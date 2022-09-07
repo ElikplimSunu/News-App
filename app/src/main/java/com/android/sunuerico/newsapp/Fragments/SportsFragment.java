@@ -26,7 +26,7 @@ import com.android.sunuerico.newsapp.NewsAdapter;
 import com.android.sunuerico.newsapp.NewsLoaderFragment;
 import com.android.sunuerico.newsapp.Objects.News;
 import com.android.sunuerico.newsapp.Objects.UserPreference;
-import com.android.sunuerico.newsapp.R;
+import com.android.sunuerico.newsapp.*;
 import com.android.sunuerico.newsapp.Values.Constants;
 
 import java.util.ArrayList;
@@ -34,6 +34,9 @@ import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
+ *
+ * @author Eric Elikplim Sunu
+ * @version 1.0
  */
 public class SportsFragment extends Fragment
 		implements LoaderManager.LoaderCallbacks<List<News>> {
@@ -49,12 +52,19 @@ public class SportsFragment extends Fragment
 	// Header for list
 	private View mListViewHeader;
 
+	/**
+	 * Required empty public constructor
+	 */
 	public SportsFragment() {
 		// Required empty public constructor
 	}
 
 	// When user changed the preference from settings and come back to fragment
 	// load the news as per news updated user preference
+	/**
+	 * When user changed the preference from settings and come back to fragment
+	 * load the news as per news updated user preference
+	 */
 	@Override
 	public void onStart() {
 		super.onStart();
@@ -63,6 +73,11 @@ public class SportsFragment extends Fragment
 		checkNetworkConnectionAndRestartLoader();
 	}
 
+
+	/**
+	 * When user changed the preference from settings and come back to fragment
+	 * load the news as per news updated user preference
+	 */
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 							 Bundle savedInstanceState) {
@@ -129,6 +144,9 @@ public class SportsFragment extends Fragment
 		return rootView;
 	}
 
+	/**
+	 * Check a network connection and initialize a loader
+	 */
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		int id = item.getItemId();
@@ -146,6 +164,9 @@ public class SportsFragment extends Fragment
 		return super.onOptionsItemSelected(item);
 	}
 
+	/**
+	 * Check a network connection and initialize a loader
+	 */
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
 		super.onCreateOptionsMenu(menu, inflater);
@@ -182,11 +203,17 @@ public class SportsFragment extends Fragment
 		});
 	}
 
+	/**
+	 * Check a network connection and initialize a loader
+	 */
 	@Override
 	public Loader<List<News>> onCreateLoader(int id, Bundle args) {
 		return new NewsLoaderFragment(getContext(), mCorrectUserQueryApi);
 	}
 
+	/**
+	 * Check a network connection and initialize a loader
+	 */
 	@Override
 	public void onLoadFinished(Loader<List<News>> loader, List<News> data) {
 		mNewsAdapter.clear();
@@ -200,6 +227,9 @@ public class SportsFragment extends Fragment
 		}
 	}
 
+	/**
+	 * Check a network connection and initialize a loader
+	 */
 	@Override
 	public void onLoaderReset(Loader<List<News>> loader) {
 		mNewsAdapter.clear();

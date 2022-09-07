@@ -1,5 +1,10 @@
 package com.android.sunuerico.newsapp.Values;
 
+/**
+ * Constants class to store all the constants used in the app.
+ * @author Eric Elikplim Sunu
+ * @version 1.0
+ */
 public class Constants {
 
 	// Constants for making an http connection
@@ -34,6 +39,9 @@ public class Constants {
 	public static final String SECTION_SPORTS = "sport";
 	public static final String SECTION_TECHNOLOGY = "technology";
 
+	/**
+	 * Private constructor to prevent instantiation of the class.
+	 */
 	Constants() {
 		// Empty constructor so it cannot be used mistakenly
 	}

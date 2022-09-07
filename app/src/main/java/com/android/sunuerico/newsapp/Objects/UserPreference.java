@@ -1,5 +1,10 @@
 package com.android.sunuerico.newsapp.Objects;
 
+/**
+ * UserPreference class to store user preferences for the app.
+ * @author Eric Elikplim Sunu
+ * @version 1.0
+ */
 public class UserPreference {
 
 	private final boolean mAuthorPreference;

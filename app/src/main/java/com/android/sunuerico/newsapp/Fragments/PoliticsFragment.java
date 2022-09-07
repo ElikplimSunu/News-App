@@ -26,7 +26,7 @@ import com.android.sunuerico.newsapp.NewsAdapter;
 import com.android.sunuerico.newsapp.NewsLoaderFragment;
 import com.android.sunuerico.newsapp.Objects.News;
 import com.android.sunuerico.newsapp.Objects.UserPreference;
-import com.android.sunuerico.newsapp.R;
+import com.android.sunuerico.newsapp.*;
 import com.android.sunuerico.newsapp.Values.Constants;
 
 import java.util.ArrayList;
@@ -34,6 +34,9 @@ import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
+ *
+ * @author Eric Elikplim Sunu
+ * @version 1.0
  */
 public class PoliticsFragment extends Fragment
 		implements LoaderManager.LoaderCallbacks<List<News>> {
@@ -63,6 +66,12 @@ public class PoliticsFragment extends Fragment
 		checkNetworkConnectionAndRestartLoader();
 	}
 
+	/**
+	 * This method is called when the fragment is visible to the user and actively running.
+	 * This is generally
+	 * tied to {@link Fragment#onStart() Fragment.onStart} of the containing
+	 * Activity's lifecycle.
+	 */
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 							 Bundle savedInstanceState) {
@@ -129,6 +138,11 @@ public class PoliticsFragment extends Fragment
 		return rootView;
 	}
 
+	/**
+	 * This method is called when the fragment is no longer started.  This is generally
+	 * tied to {@link Fragment#onStop() Fragment.onStop} of the containing
+	 * Activity's lifecycle.
+	 */
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		int id = item.getItemId();
@@ -146,6 +160,11 @@ public class PoliticsFragment extends Fragment
 		return super.onOptionsItemSelected(item);
 	}
 
+	/**
+	 * This method is called when the fragment is no longer started.  This is generally
+	 * tied to {@link Fragment#onStop() Fragment.onStop} of the containing
+	 * Activity's lifecycle.
+	 */
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
 		super.onCreateOptionsMenu(menu, inflater);

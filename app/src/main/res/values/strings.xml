@@ -76,4 +76,5 @@
 	<!-- Strings for navigation drawer header -->
 	<string name="the_guardian_title">The Guardian</string>
 	<string name="the_guardian_website">www.theguardian.com</string>
+    <string name="news_item_thumbnail">News item thumbnail</string>
 </resources>

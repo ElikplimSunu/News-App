@@ -26,7 +26,7 @@ import com.android.sunuerico.newsapp.NewsAdapter;
 import com.android.sunuerico.newsapp.NewsLoaderFragment;
 import com.android.sunuerico.newsapp.Objects.News;
 import com.android.sunuerico.newsapp.Objects.UserPreference;
-import com.android.sunuerico.newsapp.R;
+import com.android.sunuerico.newsapp.*;
 import com.android.sunuerico.newsapp.Values.Constants;
 
 import java.util.ArrayList;

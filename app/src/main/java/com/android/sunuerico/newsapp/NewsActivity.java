@@ -21,12 +21,25 @@ import com.android.sunuerico.newsapp.Fragments.SportsFragment;
 import com.android.sunuerico.newsapp.Fragments.TechnologyFragment;
 import com.google.android.material.navigation.NavigationView;
 
+import java.util.Objects;
+
+/** NewsActivity is the main activity of the app.
+ * It is responsible for displaying the navigation drawer and the fragments. This class extends {@link AppCompatActivity}
+ * and implements {@link NavigationView.OnNavigationItemSelectedListener}.
+ * @author Eric Elikplim Sunu
+ * @version 1.0
+ */
 public class NewsActivity extends AppCompatActivity
 		implements NavigationView.OnNavigationItemSelectedListener {
 
 	/* Tag for log messages */
 	private static final String LOG_TAG = NewsActivity.class.getName();
 
+	/**
+	 * This method is called when the activity is starting. It sets the content view to activity_news.xml
+	 * @param savedInstanceState If the activity is being re-initialized after previously being shut
+	 *                             down then this Bundle contains the data it most recently supplied in onSaveInstanceState(Bundle). Note: Otherwise it is null.
+	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -49,6 +62,11 @@ public class NewsActivity extends AppCompatActivity
 		onNavigationItemSelected(navigationView.getMenu().getItem(0).setChecked(true));
 	}
 
+	/**
+	 * This method is called when an item in the navigation menu is selected. It displays the appropriate fragment.
+	 * @param item The menu item that was selected.
+	 * @return boolean Return false to allow normal menu processing to proceed, true to consume it here.
+	 */
 	@SuppressWarnings("StatementWithEmptyBody")
 	@Override
 	public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -98,7 +116,10 @@ public class NewsActivity extends AppCompatActivity
 						.commit();
 				break;
 			case R.id.nav_technology:
-				/** When user technology home from navigation drawer, start {@link TechnologyFragment} */
+
+				/** When user technology home from navigation drawer,
+				 * start {@link TechnologyFragment}
+				 */
 				getSupportFragmentManager().beginTransaction()
 						.replace(R.id.content_body, new TechnologyFragment())
 						.commit();
@@ -116,6 +137,10 @@ public class NewsActivity extends AppCompatActivity
 		return true;
 	}
 
+	/**
+	 * This method is called when the back button is pressed.
+	 * It closes the navigation drawer if it is open. Otherwise, it closes the app.
+	 */
 	@Override
 	public void onBackPressed() {
 		// When user presses the back button and navigation drawer is open, close the drawer first
@@ -127,8 +152,12 @@ public class NewsActivity extends AppCompatActivity
 		}
 	}
 
+	/**
+	 * This method is called when the options menu is created. It inflates the menu; this adds items to the action bar if it is present.
+	 * @param title The options menu in which you place your items.
+	 */
 	// Change the title of action bar as per fragment
 	public void setActionBarTitle(String title){
-		getSupportActionBar().setTitle(title);
+		Objects.requireNonNull(getSupportActionBar()).setTitle(title);
 	}
 }

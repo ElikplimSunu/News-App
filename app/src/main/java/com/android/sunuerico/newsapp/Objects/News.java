@@ -1,5 +1,10 @@
 package com.android.sunuerico.newsapp.Objects;
 
+/**
+ * News object that contains the title, section, date, and url of the news article from the Guardian API.
+ * @author Eric Elikplim Sunu
+ * @version 1.0
+ */
 public class News {
 
 	private final String mHeadline;
@@ -28,31 +33,61 @@ public class News {
 		mThumbnailUrl = thumbnailUrl;
 	}
 
+	/**
+	 * Getter method for headline
+	 *
+	 * @return headline of news article
+	 */
 	// Get the headline of news
 	public String getHeadline() {
 		return mHeadline;
 	}
 
+	/**
+	 * Getter method for section
+	 *
+	 * @return section of news article
+	 */
 	// Get the section of news
 	public String getSection() {
 		return mSection;
 	}
 
+	/**
+	 * Getter method for author
+	 *
+	 * @return author of news article
+	 */
 	// Get the author's name who has written the article
 	public String getAuthor() {
 		return mAuthor;
 	}
 
+	/**
+	 * Getter method for time
+	 *
+	 * @return time of news article
+	 */
 	// Get the time at which article published
 	public String getTime() {
 		return mTime;
 	}
 
+	/**
+	 * Getter method for web URL
+	 *
+	 * @return web URL of news article
+	 */
 	// Get the web Url of news article
 	public String getWebUrl() {
 		return mWebUrl;
 	}
 
+	/**
+	 * Getter method for thumbnail URL
+	 *
+	 * @return thumbnail URL of news article
+	 */
 	// Get the url for news article thumbnail
 	public String getThumbnailUrl(){
 		return mThumbnailUrl;

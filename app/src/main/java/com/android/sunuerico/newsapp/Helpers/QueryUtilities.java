@@ -21,9 +21,23 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Helper methods related to requesting and receiving news data from the Guardian API.
+ *
+ * @author Eric Elikplim Sunu
+ * @version 1.0
+ */
 public class QueryUtilities {
+	/**
+	 * Tag for the log messages
+	 */
 	private static final String LOG_TAG = QueryUtilities.class.getName();
 
+	/**
+	 * Create a private constructor because no one should ever create a {@link QueryUtilities} object.
+	 * This class is only meant to hold static variables and methods, which can be accessed
+	 * directly from the class name QueryUtilities (and an object instance of QueryUtilities is not needed).
+	 */
 	// Empty constructor so on one can accidentally use it
 	public QueryUtilities() {
 	}

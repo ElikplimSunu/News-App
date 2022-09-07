@@ -9,7 +9,17 @@ import com.android.sunuerico.newsapp.Objects.News;
 
 import java.util.List;
 
+/**
+ * Loads a list of news by using an AsyncTask to perform the
+ * network request to the given URL.
+ * @author Eric Elikplim Sunu
+ * @version 1.0
+ */
 public class NewsLoaderFragment extends AsyncTaskLoader<List<News>>{
+
+	/**
+	 * field for the url. This is the url that will be used to get the data from the guardian api server.
+	 */
 	private final String mUrl;
 
 	/**
@@ -19,12 +29,17 @@ public class NewsLoaderFragment extends AsyncTaskLoader<List<News>>{
 	 * @param queryUrl url string as per user input in SearchView
 	 */
 	public NewsLoaderFragment(Context context, String queryUrl) {
+		// Initialize the Loader with the given ID and callbacks.
 		super(context);
 		mUrl = queryUrl;
 	}
 
+	/**
+	 * This is on a background thread.
+	 */
 	@Override
 	protected void onStartLoading() {
+		//forceLoad() is a method of the AsyncTaskLoader class that we are extending.
 		super.onStartLoading();
 		forceLoad();
 	}

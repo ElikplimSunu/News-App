@@ -26,18 +26,24 @@ import com.android.sunuerico.newsapp.NewsAdapter;
 import com.android.sunuerico.newsapp.NewsLoaderFragment;
 import com.android.sunuerico.newsapp.Objects.News;
 import com.android.sunuerico.newsapp.Objects.UserPreference;
-import com.android.sunuerico.newsapp.R;
+import com.android.sunuerico.newsapp.*;
 import com.android.sunuerico.newsapp.Values.Constants;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * A simple {@link Fragment} subclass.
+ * A simple {@link Fragment} subclass which displays a list of news related to technology.
+ *
+ * @author Eric Elikplim Sunu
+ * @version 1.0
  */
 public class TechnologyFragment extends Fragment
 		implements LoaderManager.LoaderCallbacks<List<News>> {
 
+	/**
+	 * Constant value for the news loader ID.
+	 */
 	private static final int NEWS_LOADER_ID = 7;
 
 	private NewsAdapter mNewsAdapter;
@@ -49,12 +55,21 @@ public class TechnologyFragment extends Fragment
 	// Header for list
 	private View mListViewHeader;
 
+	/**
+	 * Required empty public constructor
+	 */
 	public TechnologyFragment() {
 		// Required empty public constructor
 	}
 
 	// When user changed the preference from settings and come back to fragment
 	// load the news as per news updated user preference
+	/**
+	 * This method is called when the fragment is visible to the user and actively running.
+	 * This is generally
+	 * tied to {@link Fragment#onResume() Fragment.onResume} of the containing
+	 * Activity's lifecycle.
+	 */
 	@Override
 	public void onStart() {
 		super.onStart();
@@ -63,6 +78,24 @@ public class TechnologyFragment extends Fragment
 		checkNetworkConnectionAndRestartLoader();
 	}
 
+	/**
+	 * This method is called to have the fragment instantiate its user interface view.
+	 * This is optional, and non-graphical fragments can return null (which is the default
+	 * implementation).  This will be called between {@link #onCreate(Bundle)} and
+	 * {@link #onActivityCreated(Bundle)}.
+	 * <p>
+	 * If you return a View from here, you will later be called in
+	 * {@link #onDestroyView} when the view is being released.
+	 *
+	 * @param inflater           The LayoutInflater object that can be used to inflate
+	 *                           any views in the fragment,
+	 * @param container          If non-null, this is the parent view that the fragment's
+	 *                           UI should be attached to.  The fragment should not add the view itself,
+	 *                           but this can be used to generate the LayoutParams of the view.
+	 * @param savedInstanceState If non-null, this fragment is being re-constructed
+	 *                           from a previous saved state as given here.
+	 * @return Return the View for the fragment's UI, or null.
+	 */
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 							 Bundle savedInstanceState) {
@@ -129,6 +162,11 @@ public class TechnologyFragment extends Fragment
 		return rootView;
 	}
 
+
+	/**
+	 * This method is called when the fragment is no longer in use.  This is called
+	 * after {@link #onStop()} and before {@link #onDetach()}.
+	 */
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		int id = item.getItemId();
@@ -146,6 +184,11 @@ public class TechnologyFragment extends Fragment
 		return super.onOptionsItemSelected(item);
 	}
 
+
+	/**
+	 * This method is called when the fragment is no longer in use.  This is called
+	 * after {@link #onStop()} and before {@link #onDetach()}.
+	 */
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
 		super.onCreateOptionsMenu(menu, inflater);
@@ -182,11 +225,20 @@ public class TechnologyFragment extends Fragment
 		});
 	}
 
+
+	/**
+	 * This method is called when the fragment is no longer in use.  This is called
+	 * after {@link #onStop()} and before {@link #onDetach()}.
+	 */
 	@Override
 	public Loader<List<News>> onCreateLoader(int id, Bundle args) {
 		return new NewsLoaderFragment(getContext(), mCorrectUserQueryApi);
 	}
 
+	/**
+	 * This method is called when the fragment is no longer in use.  This is called
+	 * after {@link #onStop()} and before {@link #onDetach()}.
+	 */
 	@Override
 	public void onLoadFinished(Loader<List<News>> loader, List<News> data) {
 		mNewsAdapter.clear();
@@ -200,6 +252,11 @@ public class TechnologyFragment extends Fragment
 		}
 	}
 
+
+	/**
+	 * This method is called when the fragment is no longer in use.  This is called
+	 * after {@link #onStop()} and before {@link #onDetach()}.
+	 */
 	@Override
 	public void onLoaderReset(Loader<List<News>> loader) {
 		mNewsAdapter.clear();

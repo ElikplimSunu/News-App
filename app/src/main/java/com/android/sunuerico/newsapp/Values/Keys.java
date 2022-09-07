@@ -1,5 +1,10 @@
 package com.android.sunuerico.newsapp.Values;
 
+/**
+ * Keys class to store the API keys for the app.
+ * @author Eric Elikplim Sunu
+ * @version 1.0
+ */
 public class Keys {
 
 	// Keys for extracting JSON object
@@ -14,6 +19,9 @@ public class Keys {
 	public static final String JSON_NEWS_TAGS_KEY = "tags";
 	public static final String JSON_NEWS_AUTHOR_NAME_KEY = "webTitle";
 
+	/**
+	 * Private constructor to prevent instantiation of the class.
+	 */
 	Keys() {
 		// Empty constructor so it cannot be used mistakenly
 	}

@@ -22,6 +22,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * Adapter for the list of news items.
+ * @author Eric Elikplim Sunu
+ * @version 1.0
+ */
 public class NewsAdapter extends ArrayAdapter<News> {
 	// Tag for log messages
 	private static final String LOG_TAG = NewsAdapter.class.getName();
@@ -32,12 +37,28 @@ public class NewsAdapter extends ArrayAdapter<News> {
 	// Context of the app
 	private final Context mContext;
 
+	/**
+	 * Constructs a new {@link NewsAdapter}.
+	 *
+ 	 * @param context context of the app to be used to inflate the layout file and to get the resources from it.
+	 * @param newsList list of news items to be displayed.
+	 * @param isSection if the content is for section or not (true if it is for section, false otherwise).
+	 */
 	public NewsAdapter(@NonNull Context context, List<News> newsList, boolean isSection) {
 		super(context, 0, newsList);
 		mIsSection = isSection;
 		mContext = context;
 	}
 
+	/**
+	 * Returns a list item view that displays information about the news at the given position
+	 * in the list of news.
+	 *
+	 * @param position The position of the item within the adapter's data set of the item whose view we want.
+	 * @param convertView The recycled view to populate.
+	 * @param parent The parent ViewGroup that is used for inflation.
+	 * @return The View for the position in the AdapterView.
+	 */
 	@NonNull
 	@Override
 	public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
