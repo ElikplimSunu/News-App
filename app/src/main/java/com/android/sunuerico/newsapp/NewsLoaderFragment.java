@@ -1,7 +1,6 @@
 package com.android.sunuerico.newsapp;
 
 import android.content.Context;
-import android.os.AsyncTask;
 
 import androidx.loader.content.AsyncTaskLoader;
 
@@ -11,7 +10,7 @@ import com.android.sunuerico.newsapp.Objects.News;
 import java.util.List;
 
 public class NewsLoaderFragment extends AsyncTaskLoader<List<News>>{
-	private String mUrl;
+	private final String mUrl;
 
 	/**
 	 * NewsLoaderFragment constructor

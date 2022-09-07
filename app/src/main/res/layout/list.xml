@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:background="@color/backgroundColor">
+	android:background="@color/backgroundColor"
+	android:backgroundTint="@color/backgroundColor">
 
 	<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 		android:id="@+id/swipe_to_refresh"
 		android:layout_width="match_parent"
-		android:layout_height="match_parent">
+		android:layout_height="match_parent"
+		app:swipeRefreshLayoutProgressSpinnerBackgroundColor="@color/categoryLifeAndStyle">
 
 		<ListView
 			android:id="@+id/list"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
+			android:layout_margin="@dimen/default_app_padding"
 			android:background="@color/backgroundColor"
+			android:divider="@color/backgroundColor"
 			android:drawSelectorOnTop="true"
 			android:orientation="vertical" />
 	</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
@@ -23,7 +28,10 @@
 		android:id="@+id/progress_bar"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_centerInParent="true" />
+		android:layout_centerInParent="true"
+		android:indeterminate="true"
+		android:indeterminateTint="@color/colorPrimary"
+		android:indeterminateTintMode="src_atop" />
 
 	<TextView
 		android:id="@+id/empty_view_text_box"

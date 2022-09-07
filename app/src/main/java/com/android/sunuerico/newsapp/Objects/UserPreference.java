@@ -2,10 +2,10 @@ package com.android.sunuerico.newsapp.Objects;
 
 public class UserPreference {
 
-	private boolean mAuthorPreference;
-	private boolean mThumbnailPreference;
-	private String mArticleNumberPreference;
-	private String mOrderByPreference;
+	private final boolean mAuthorPreference;
+	private final boolean mThumbnailPreference;
+	private final String mArticleNumberPreference;
+	private final String mOrderByPreference;
 
 	/**
 	 * Custom object to store user preferences from Settings

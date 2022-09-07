@@ -27,7 +27,6 @@
 		<item name="android:paddingBottom">@dimen/default_list_item_padding</item>
 		<item name="android:textColor">@color/listItemCategoryColor</item>
 		<item name="android:textSize">@dimen/secondary_text_size</item>
-		<item name="android:textStyle">italic</item>
 	</style>
 
 	<!-- Style for headline in list item -->
@@ -52,7 +51,6 @@
 		<item name="android:paddingLeft">@dimen/default_list_item_padding</item>
 		<item name="android:textColor">@color/secondaryTextColor</item>
 		<item name="android:textSize">@dimen/secondary_text_size</item>
-		<item name="android:textStyle">italic</item>
 	</style>
 
 	<!-- Style for date in list item -->
@@ -81,9 +79,9 @@
 		<item name="android:layout_height">wrap_content</item>
 		<item name="android:fontFamily">sans-serif-condensed</item>
 		<item name="android:padding">@dimen/default_app_padding</item>
-		<item name="android:textColor">@color/backgroundColor</item>
+		<item name="android:textColor">@color/primaryTextColor</item>
 		<item name="android:textSize">@dimen/list_header_text</item>
-		<item name="android:textStyle">normal</item>
+		<item name="android:textStyle">bold</item>
 		<item name="android:textAllCaps">true</item>
 	</style>
 
@@ -93,7 +91,7 @@
 		<item name="android:layout_height">wrap_content</item>
 		<item name="android:fontFamily">sans-serif-condensed</item>
 		<item name="android:padding">@dimen/default_app_padding</item>
-		<item name="android:textColor">@color/backgroundColor</item>
+		<item name="android:textColor">@color/secondaryTextColor</item>
 		<item name="android:textSize">@dimen/list_header_search_query_text</item>
 		<item name="android:textStyle">normal</item>
 		<item name="android:textAllCaps">true</item>

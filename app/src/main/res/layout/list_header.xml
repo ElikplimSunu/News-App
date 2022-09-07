@@ -12,13 +12,11 @@
 		android:id="@+id/list_header"
 		style="@style/list_view_header_style"
 		android:layout_marginBottom="@dimen/header_list_margin"
-		android:background="@drawable/list_header_background"
 		tools:text="@string/list_header_title" />
 
 	<TextView
 		android:id="@+id/list_header_section"
 		style="@style/list_view_header_section_style"
 		android:layout_marginBottom="@dimen/header_list_margin"
-		android:background="@drawable/list_header_section_background"
 		tools:text="@string/nav_life_style_title" />
 </LinearLayout>

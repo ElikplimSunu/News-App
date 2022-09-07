@@ -8,7 +8,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/BugSlayer/Documents/Programmes/AndroidStudioProjects/News-App/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1295" />
+        <entry key="..\:/Users/BugSlayer/Documents/Programmes/AndroidStudioProjects/News-App/app/src/main/res/drawable/drawer_item_selection.xml" value="0.1295" />
+        <entry key="..\:/Users/BugSlayer/Documents/Programmes/AndroidStudioProjects/News-App/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1295" />
         <entry key="..\:/Users/BugSlayer/Documents/Programmes/AndroidStudioProjects/News-App/app/src/main/res/drawable/list_header_background.xml" value="0.1295" />
+        <entry key="..\:/Users/BugSlayer/Documents/Programmes/AndroidStudioProjects/News-App/app/src/main/res/drawable/round_outline.xml" value="0.1295" />
+        <entry key="..\:/Users/BugSlayer/Documents/Programmes/AndroidStudioProjects/News-App/app/src/main/res/drawable/shadow_background.xml" value="0.1295" />
+        <entry key="..\:/Users/BugSlayer/Documents/Programmes/AndroidStudioProjects/News-App/app/src/main/res/drawable/side_nav_bar.xml" value="0.1295" />
+        <entry key="..\:/Users/BugSlayer/Documents/Programmes/AndroidStudioProjects/News-App/app/src/main/res/layout-v31/news_list_item.xml" value="0.21557971014492755" />
         <entry key="..\:/Users/BugSlayer/Documents/Programmes/AndroidStudioProjects/News-App/app/src/main/res/layout/activity_news.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/BugSlayer/Documents/Programmes/AndroidStudioProjects/News-App/app/src/main/res/layout/activity_settings.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/BugSlayer/Documents/Programmes/AndroidStudioProjects/News-App/app/src/main/res/layout/app_bar.xml" value="0.24895833333333334" />
@@ -17,10 +24,20 @@
         <entry key="..\:/Users/BugSlayer/Documents/Programmes/AndroidStudioProjects/News-App/app/src/main/res/layout/list_header.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/BugSlayer/Documents/Programmes/AndroidStudioProjects/News-App/app/src/main/res/layout/nav_header_main.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/BugSlayer/Documents/Programmes/AndroidStudioProjects/News-App/app/src/main/res/layout/news_list_item.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/BugSlayer/Documents/Programmes/AndroidStudioProjects/News-App/app/src/main/res/layout/shadow_background.xml" value="0.21557971014492755" />
         <entry key="..\:/Users/BugSlayer/Documents/Programmes/AndroidStudioProjects/News-App/app/src/main/res/layout/webview_activity.xml" value="0.24791666666666667" />
+        <entry key="..\:/Users/BugSlayer/Documents/Programmes/AndroidStudioProjects/News-App/app/src/main/res/menu/activity_main_drawer.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/BugSlayer/Documents/Programmes/AndroidStudioProjects/News-App/app/src/main/res/menu/fragment_search_menu.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/BugSlayer/Documents/Programmes/AndroidStudioProjects/News-App/app/src/main/res/menu/options_menu.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/BugSlayer/Documents/Programmes/AndroidStudioProjects/News-App/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.12" />
+        <entry key="..\:/Users/BugSlayer/Documents/Programmes/AndroidStudioProjects/News-App/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1295" />
         <entry key="..\:/Users/BugSlayer/Documents/Programmes/AndroidStudioProjects/News-App/app/src/main/res/xml/settings_main.xml" value="0.24895833333333334" />
       </map>
     </option>
+  </component>
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY" value="$USER_HOME$/Desktop" />
+    <option name="OPTION_INCLUDE_LIBS" value="true" />
   </component>
   <component name="Kotlin2JsCompilerArguments">
     <option name="sourceMapEmbedSources" />

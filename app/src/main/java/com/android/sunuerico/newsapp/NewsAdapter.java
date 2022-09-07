@@ -27,24 +27,10 @@ public class NewsAdapter extends ArrayAdapter<News> {
 	private static final String LOG_TAG = NewsAdapter.class.getName();
 
 	// If the content is for section or not
-	private boolean mIsSection;
+	private final boolean mIsSection;
 
 	// Context of the app
-	private Context mContext;
-
-	/**
-	 * ViewHolder for list item in res/layout/news_list_item.xml
-	 * View holder that cashes the views so we do not need to use findViewById every time
-	 * So scrolling of list view becomes more smooth
-	 */
-	static class ViewHolderListItem {
-		TextView sectionName;
-		TextView headline;
-		ImageView thumbnail;
-		View bufferView;
-		TextView publishedTime;
-		TextView authorName;
-	}
+	private final Context mContext;
 
 	public NewsAdapter(@NonNull Context context, List<News> newsList, boolean isSection) {
 		super(context, 0, newsList);
@@ -163,5 +149,19 @@ public class NewsAdapter extends ArrayAdapter<News> {
 				currentTimeInMillis
 				, System.currentTimeMillis()
 				, DateUtils.MINUTE_IN_MILLIS);
+	}
+
+	/**
+	 * ViewHolder for list item in res/layout/news_list_item.xml
+	 * View holder that cashes the views so we do not need to use findViewById every time
+	 * So scrolling of list view becomes more smooth
+	 */
+	static class ViewHolderListItem {
+		TextView sectionName;
+		TextView headline;
+		ImageView thumbnail;
+		View bufferView;
+		TextView publishedTime;
+		TextView authorName;
 	}
 }

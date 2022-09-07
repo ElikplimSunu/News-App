@@ -61,7 +61,7 @@ public class EducationFragment extends Fragment implements LoaderManager.LoaderC
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-	                         Bundle savedInstanceState) {
+							 Bundle savedInstanceState) {
 		final View rootView = inflater.inflate(R.layout.list, container, false);
 
 		// Set actionbar title

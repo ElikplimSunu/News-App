@@ -31,7 +31,6 @@ import com.android.sunuerico.newsapp.R;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -66,7 +65,7 @@ public class HomeFragment extends Fragment
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-	                         Bundle savedInstanceState) {
+							 Bundle savedInstanceState) {
 		final View rootView = inflater.inflate(R.layout.list, container, false);
 
 		// Set actionbar title

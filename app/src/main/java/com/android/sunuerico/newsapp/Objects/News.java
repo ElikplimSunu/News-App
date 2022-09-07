@@ -2,12 +2,12 @@ package com.android.sunuerico.newsapp.Objects;
 
 public class News {
 
-	private String mHeadline;
-	private String mSection;
-	private String mAuthor;
-	private String mTime;
-	private String mWebUrl;
-	private String mThumbnailUrl;
+	private final String mHeadline;
+	private final String mSection;
+	private final String mAuthor;
+	private final String mTime;
+	private final String mWebUrl;
+	private final String mThumbnailUrl;
 
 	/**
 	 * Constructor for News object

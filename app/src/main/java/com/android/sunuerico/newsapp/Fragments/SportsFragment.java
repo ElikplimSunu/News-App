@@ -65,7 +65,7 @@ public class SportsFragment extends Fragment
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-	                         Bundle savedInstanceState) {
+							 Bundle savedInstanceState) {
 		final View rootView = inflater.inflate(R.layout.list, container, false);
 
 		// Set actionbar title
