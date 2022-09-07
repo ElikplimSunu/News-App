@@ -17,14 +17,7 @@ public class FragmentHelper {
 		// Empty constructor so no one can initialize it
 	}
 
-	/**
-	 * This method is called to get the url string to show top headlines as per user preference
-	 * Generates the url of type
-	 * "https://content.guardianapis.com/search?q=&show-fields=thumbnail,trailText&page-size=20&show-tags=contributor&order-by=newest&api-key=test";
-	 *
-	 * @param userPreference user preference from Settings
-	 * @return url string to get general top headlines
-	 */
+
 	public static String getTopHeadlines(UserPreference userPreference) {
 		Uri.Builder builder = new Uri.Builder();
 		builder.scheme(Constants.URL_SCHEME);
@@ -48,8 +41,6 @@ public class FragmentHelper {
 	/**
 	 * This method is called to generate the correct url string when user provides a search query
 	 * and user preference
-	 * Generates the url of type
-	 * https://content.guardianapis.com/search?q=USER_QUERY&show-fields=thumbnail,trailText&page-size=20&show-tags=contributor&order-by=relevance&api-key=test
 	 *
 	 * @param userQuery      query submitted by user from search widget
 	 * @param userPreference user preference in Settings

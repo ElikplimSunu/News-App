@@ -47,7 +47,7 @@ public class NewsLoaderFragment extends AsyncTaskLoader<List<News>>{
 	/**
 	 * This method is called to load data from url string in background thread
 	 *
-	 * @return News detail in form of List<News>
+	 * @return News detail in form of list of {@link News} object
 	 */
 	@Override
 	public List<News> loadInBackground() {

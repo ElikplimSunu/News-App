@@ -43,10 +43,10 @@ public class QueryUtilities {
 	}
 
 	/**
-	 * This method is used to get the news in form of List<News> from url string
+	 * Query the Guardian API dataset and return a list of {@link News} objects.
 	 *
-	 * @param requestedQueryURLString url string generated as per user input in SearchView
-	 * @return News data in form of List<News>
+	 * @param requestedQueryURLString url string as per user input in SearchView
+	 * @return list of {@link News} object
 	 */
 	public static List<News> fetchNewsData(String requestedQueryURLString) {
 		URL url;
