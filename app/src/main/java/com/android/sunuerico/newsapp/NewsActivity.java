@@ -38,7 +38,7 @@ public class NewsActivity extends AppCompatActivity
 	/**
 	 * This method is called when the activity is starting. It sets the content view to activity_news.xml
 	 * @param savedInstanceState If the activity is being re-initialized after previously being shut
-	 *                             down then this Bundle contains the data it most recently supplied in onSaveInstanceState(Bundle). Note: Otherwise it is null.
+	 * down then this Bundle contains the data it most recently supplied in onSaveInstanceState(Bundle). Note: Otherwise it is null.
 	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
